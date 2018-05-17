@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="pl">
+  <head>
+    <title>Pattern Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="../../css/style.css?1526589476791" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1526589476791" media="all" />
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="body">
+    
+<footer class="c-footer" role="contentinfo">
+
+	<div class="l">
+		<a href="&#x2F;patterns&#x2F;04-pages-00-homepage&#x2F;04-pages-00-homepage.rendered.html" class="c-logo-footer-link">
+	<img src="../../images/logo-reversed.svg" class="c-logo c-logo-footer-link__img" alt="HikeTracker" />
+
+</a><!-- end c-logo -->
+
+		<nav class="c-footer-nav">
+
+	<ul class="c-footer-nav__list">
+
+		<li class="c-footer-nav__item"><a href="&#x2F;patterns&#x2F;04-pages-05-about&#x2F;04-pages-05-about.rendered.html" class="c-footer-nav__link">About</a></li>
+		<li class="c-footer-nav__item"><a href="&#x2F;patterns&#x2F;04-pages-03-blog-index&#x2F;04-pages-03-blog-index.rendered.html" class="c-footer-nav__link">Blog</a></li>
+		<li class="c-footer-nav__item"><a href="&#x2F;patterns&#x2F;04-pages-06-contact&#x2F;04-pages-06-contact.rendered.html" class="c-footer-nav__link">Contact</a></li>
+		<li class="c-footer-nav__item"><a href="&#x2F;patterns&#x2F;04-pages-01-login&#x2F;04-pages-01-login.rendered.html" class="c-footer-nav__link">Login</a></li>
+
+	</ul><!--end c-footer-nav__list-->
+
+</nav><!--end c-footer-nav-->
+		<p class="c-footer__info">This is a demonstration of what's possible with <a href="http://patternlab.io" rel="external">Pattern Lab</a>. <a href="http://patternlab.io/download.html">Download Pattern Lab</a>, check out the <a href="http://patternlab.io/docs/">documentation</a>, or learn more about <a href="http://atomicdesign.bradfrost.com/">atomic design</a>.</p>
+		<p class="copyright">&copy; 2016 HikeTracker. All rights reserved.</p>
+	</div><!-- end l -->
+
+</footer><!-- end c-footer -->
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-logo-footer-link","lineagePath":"../../patterns/01-molecules-media-logo-footer-link/01-molecules-media-logo-footer-link.rendered.html"},{"lineagePattern":"molecules-footer-nav","lineagePath":"../../patterns/01-molecules-navigation-footer-nav/01-molecules-navigation-footer-nav.rendered.html"}],"lineage":[{"lineagePattern":"molecules-logo-footer-link","lineagePath":"../../patterns/01-molecules-media-logo-footer-link/01-molecules-media-logo-footer-link.rendered.html"},{"lineagePattern":"molecules-footer-nav","lineagePath":"../../patterns/01-molecules-navigation-footer-nav/01-molecules-navigation-footer-nav.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-blog-index","lineagePath":"../../patterns/03-templates-blog-index/03-templates-blog-index.rendered.html"},{"lineagePattern":"templates-dashboard","lineagePath":"../../patterns/03-templates-dashboard/03-templates-dashboard.rendered.html"},{"lineagePattern":"templates-detail","lineagePath":"../../patterns/03-templates-detail/03-templates-detail.rendered.html"},{"lineagePattern":"templates-homepage","lineagePath":"../../patterns/03-templates-homepage/03-templates-homepage.rendered.html"}],"lineageR":[{"lineagePattern":"templates-blog-index","lineagePath":"../../patterns/03-templates-blog-index/03-templates-blog-index.rendered.html"},{"lineagePattern":"templates-dashboard","lineagePath":"../../patterns/03-templates-dashboard/03-templates-dashboard.rendered.html"},{"lineagePattern":"templates-detail","lineagePath":"../../patterns/03-templates-detail/03-templates-detail.rendered.html"},{"lineagePattern":"templates-homepage","lineagePath":"../../patterns/03-templates-homepage/03-templates-homepage.rendered.html"}],"patternLineageEExists":true,"patternDesc":"<p>[Insert description here]</p>\n","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"global"},"patternExtension":"mustache","patternName":"Footer","patternPartial":"organisms-footer","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1526589476791">
+  (function() {
+    if (self != top) {
+      var cb = '1526589476791';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1526589476791">
+  (function() {
+    if (self != top) {
+      var cb = '1526589476791';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+  <script type="text/javascript" src="/js/nav.js"></script>
+  <script type="text/javascript" src="/js/progress.js"></script>
+  <script type="text/javascript" src="/js/overlay.js"></script>
+  </body>
+</html>
