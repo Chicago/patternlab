@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html class="pl">
-  <head>
-    <title>Pattern Lab</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" />
-    
-    <link rel="stylesheet" href="../../css/style.css?1526922382832" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1526922382832" media="all" />
-    
-    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-    
-    <!-- End Pattern Lab -->
-  
-  </head>
-  <body class="body">
-    
-<h2 id="btn-groups-toolbar">Button toolbar</h2>
+<html class="">
+	<head>
+		<title>Pattern Lab</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="stylesheet" href="../../css/bootstrap.css" media="all" />
+		<link rel="stylesheet" href="../../css/bootstrap-theme.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		
+		<!-- End Pattern Lab -->
+	
+	</head>
+	<body class="">	
+		<h2 id="btn-groups-toolbar">Button toolbar</h2>
 <p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> for more complex components.</p>
 <div class="btn-group" role="group" aria-label="First group">
     <button type="button" class="btn btn-default">1</button>
@@ -171,9 +170,11 @@
   	<div class="btn-group" role="group">
     	<button type="button" class="btn btn-default">Right</button>
   	</div>
-</div>  
-  <!--DO NOT REMOVE-->
-  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+</div><script src="../../js/vendor/jquery.min.js"></script>
+<script src="../../js/bootstrap.js"></script>
+			
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
   {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>&lt;p class=&quot;lead&quot;&gt;Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with &lt;a href=&quot;../javascript/#buttons&quot;&gt;our buttons plugin&lt;/a&gt;.&lt;/p&gt;</p>\n<p>&lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-btn-group-tooltips&quot;&gt;\n&lt;h4&gt;Tooltips &amp; popovers in button groups require special setting&lt;/h4&gt;\n&lt;p&gt;When using tooltips or popovers on elements within a &lt;code&gt;.btn-group&lt;/code&gt;, you'll have to specify the option &lt;code&gt;container: 'body'&lt;/code&gt; to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).&lt;/p&gt;\n&lt;/div&gt;</p>\n<p>&lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-btn-group-accessibility&quot;&gt;\n&lt;h4&gt;Ensure correct &lt;code&gt;role&lt;/code&gt; and provide a label&lt;/h4&gt;\n&lt;p&gt;In order for assistive technologies – such as screen readers – to convey that a series of buttons is grouped, an appropriate &lt;code&gt;role&lt;/code&gt; attribute needs to be provided. For button groups, this would be &lt;code&gt;role=&quot;group&quot;&lt;/code&gt;, while toolbars should have a &lt;code&gt;role=&quot;toolbar&quot;&lt;/code&gt;.&lt;/p&gt;\n&lt;p&gt;One exception are groups which only contain a single control (for instance the &lt;a href=&quot;#btn-groups-justified&quot;&gt;justified button groups&lt;/a&gt; with &lt;code&gt;&lt;button&gt;&lt;/code&gt; elements) or a dropdown.&lt;/p&gt;\n&lt;p&gt;In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct &lt;code&gt;role&lt;/code&gt; attribute. In the examples provided here, we use &lt;code&gt;aria-label&lt;/code&gt;, but alternatives such as &lt;code&gt;aria-labelledby&lt;/code&gt; can also be used.&lt;/p&gt;\n&lt;/div&gt;</p>\n","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"components"},"patternExtension":"mustache","patternName":"Button Groups","patternPartial":"molecules-button-groups-variants","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 </script>
 
@@ -210,28 +211,26 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1526922382832">
+<script id="pl-js-polyfill-insert-1526923911839">
   (function() {
     if (self != top) {
-      var cb = '1526922382832';
+      var cb = '1526923911839';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
   })();
 </script>
 
-<script id="pl-js-insert-1526922382832">
+<script id="pl-js-insert-1526923911839">
   (function() {
     if (self != top) {
-      var cb = '1526922382832';
+      var cb = '1526923911839';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
   })();
 </script>
 
-  <script type="text/javascript" src="/js/nav.js"></script>
-  <script type="text/javascript" src="/js/progress.js"></script>
-  <script type="text/javascript" src="/js/overlay.js"></script>
-  </body>
+	
+	</body>
 </html>
