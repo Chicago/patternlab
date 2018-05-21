@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html class="">
-	<head>
-		<title>Pattern Lab</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width" />
-		
-		<link rel="stylesheet" href="../../css/bootstrap.css" media="all" />
-		<link rel="stylesheet" href="../../css/bootstrap-theme.css" media="all" />
-
-		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-		
-		<!-- End Pattern Lab -->
-	
-	</head>
-	<body class="">	
-		<nav class="navbar navbar-default">
+<html class="pl">
+  <head>
+    <title>Pattern Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="../../css/style.css?1526922382832" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1526922382832" media="all" />
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="body">
+    
+<nav class="navbar ">
 	<div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     	<div class="navbar-header"> <!-- d -->
@@ -23,66 +24,22 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Pattern Lab</a>
+			<a class="navbar-brand" href="#"></a>
     	</div> <!-- a -->
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><!-- d -->			
-			<ul class="nav navbar-nav ">
-    <li >
-   		<a href="#" >
-	   		Link</a>
-    </li>
-    <li >
-   		<a href="#" >
-	   		Link</a>
-    </li>
-    <li class="dropdown">
-   		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-	   		Dropdown<span class="caret"></span></a>
-	  	<ul class="dropdown-menu">
-	  		<li ><a href="#">Action</a></li>
-	  		<li ><a href="#">Another action</a></li>
-	  		<li ><a href="#">Something else here</a></li>
-	  		<li role="separator" class="divider"><a href="#">Dropdown</a></li>
-	  		<li ><a href="#">Link 4</a></li>
-    	</ul>
-    </li>
-</ul>
-	  		<form class="navbar-form navbar-left" role="search">
+	  		<form class="navbar-form " role="search">
     <div class="form-group">
-      <input type="text" class="form-control" placeholder="Placeholder Text">
+      <input type="text" class="form-control" placeholder="">
     </div>
-    <button type="button" class="btn btn-default">Call To Action</button>
+    <button type="button" class="btn "></button>
  
 </form>
-			<ul class="nav navbar-nav navbar-right">
-    <li >
-   		<a href="#" >
-	   		Link</a>
-    </li>
-    <li >
-   		<a href="#" >
-	   		Link</a>
-    </li>
-    <li class="dropdown">
-   		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-	   		Dropdown<span class="caret"></span></a>
-	  	<ul class="dropdown-menu">
-	  		<li ><a href="#">Action</a></li>
-	  		<li ><a href="#">Another action</a></li>
-	  		<li ><a href="#">Something else here</a></li>
-	  		<li role="separator" class="divider"><a href="#">Dropdown</a></li>
-	  		<li ><a href="#">Link 4</a></li>
-    	</ul>
-    </li>
-</ul>
     	</div><!-- /.navbar-collapse c -->
   	</div><!-- /.container-fluid b -->
-</nav><script src="../../js/vendor/jquery.min.js"></script>
-<script src="../../js/bootstrap.js"></script>
-			
-	<!--DO NOT REMOVE-->
-	<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+</nav>  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
   {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-navbar-nav","lineagePath":"../../patterns/01-molecules-03-navigation-16-navbar-nav/01-molecules-03-navigation-16-navbar-nav.rendered.html"},{"lineagePattern":"molecules-navbar-form","lineagePath":"../../patterns/01-molecules-03-navigation-17-navbar-form/01-molecules-03-navigation-17-navbar-form.rendered.html"}],"lineage":[{"lineagePattern":"molecules-navbar-nav","lineagePath":"../../patterns/01-molecules-03-navigation-16-navbar-nav/01-molecules-03-navigation-16-navbar-nav.rendered.html"},{"lineagePattern":"molecules-navbar-form","lineagePath":"../../patterns/01-molecules-03-navigation-17-navbar-form/01-molecules-03-navigation-17-navbar-form.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>Default navbar\n&lt;p&gt;Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.&lt;/p&gt;\n&lt;p&gt;&lt;strong class=&quot;text-danger&quot;&gt;Justified navbar nav links are currently not supported.&lt;/strong&gt;&lt;/p&gt;</p>\n<pre><code>&lt;h4&gt;Overflowing content&lt;/h4&gt;\n&lt;p&gt;Since Bootstrap doesn't know how much space the content in your navbar needs, you might run into issues with content wrapping into a second row. To resolve this, you can:&lt;/p&gt;\n&lt;ol type=&quot;a&quot;&gt;\n  &lt;li&gt;Reduce the amount or width of navbar items.&lt;/li&gt;\n  &lt;li&gt;Hide certain navbar items at certain screen sizes using &lt;a href=&quot;../css/#responsive-utilities&quot;&gt;responsive utility classes&lt;/a&gt;.&lt;/li&gt;\n  &lt;li&gt;Change the point at which your navbar switches between collapsed and horizontal mode. Customize the &lt;code&gt;@grid-float-breakpoint&lt;/code&gt; variable or add your own media query.&lt;/li&gt;\n&lt;/ol&gt;\n\n&lt;p&gt;If JavaScript is disabled and the viewport is narrow enough that the navbar collapses, it will be impossible to expand the navbar and view the content within the &lt;code&gt;.navbar-collapse&lt;/code&gt;.&lt;/p&gt;\n&lt;p&gt;The responsive navbar requires the &lt;a href=&quot;../javascript/#collapse&quot;&gt;collapse plugin&lt;/a&gt; to be included in your version of Bootstrap.&lt;/p&gt;\n\n&lt;h4&gt;Changing the collapsed mobile navbar breakpoint&lt;/h4&gt;\n&lt;p&gt;The navbar collapses into its vertical mobile view when the viewport is narrower than &lt;code&gt;@grid-float-breakpoint&lt;/code&gt;, and expands into its horizontal non-mobile view when the viewport is at least &lt;code&gt;@grid-float-breakpoint&lt;/code&gt; in width. Adjust this variable in the Less source to control when the navbar collapses/expands. The default value is &lt;code&gt;768px&lt;/code&gt; (the smallest &quot;small&quot; or &quot;tablet&quot; screen).&lt;/p&gt;\n\n&lt;h4&gt;Make navbars accessible&lt;/h4&gt;\n&lt;p&gt;Be sure to use a &lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt; element or, if using a more generic element such as a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, add a &lt;code&gt;role=&quot;navigation&quot;&lt;/code&gt; to every navbar to explicitly identify it as a landmark region for users of assistive technologies.&lt;/p&gt;</code></pre>\n","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Navigation Bar","patternPartial":"organisms-navbar","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 </script>
 
@@ -119,26 +76,28 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1526921355381">
+<script id="pl-js-polyfill-insert-1526922382832">
   (function() {
     if (self != top) {
-      var cb = '1526921355381';
+      var cb = '1526922382832';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
   })();
 </script>
 
-<script id="pl-js-insert-1526921355381">
+<script id="pl-js-insert-1526922382832">
   (function() {
     if (self != top) {
-      var cb = '1526921355381';
+      var cb = '1526922382832';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
   })();
 </script>
 
-	
-	</body>
+  <script type="text/javascript" src="/js/nav.js"></script>
+  <script type="text/javascript" src="/js/progress.js"></script>
+  <script type="text/javascript" src="/js/overlay.js"></script>
+  </body>
 </html>
