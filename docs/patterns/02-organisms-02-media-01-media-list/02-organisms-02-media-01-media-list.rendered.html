@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="">
+	<head>
+		<title>Pattern Lab</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="stylesheet" href="../../css/bootstrap.css" media="all" />
+		<link rel="stylesheet" href="../../css/bootstrap-theme.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		
+		<!-- End Pattern Lab -->
+	
+	</head>
+	<body class="">	
+		<!-- Media List -->
+<ul class="media-list">
+	<li>
+		<div class="media">
+    <div class="media-left ">
+        <a href="#">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+	<div class="media-body">
+	  	<h4 class="media-heading">Page Header</h4>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div class="media">
+	<div class="media-body">
+	  	<h4 class="media-heading">Page Header</h4>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	</div>
+    <div class="media-right ">
+        <a href="#">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+</div>
+
+        <div class="media">
+    <div class="media-left ">
+        <a href="#">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+	<div class="media-body">
+	  	<h4 class="media-heading">Page Header</h4>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	</div>
+</div>
+
+	</div>
+</div>
+
+	
+	</li>
+	<li>
+		<div class="media">
+    <div class="media-left ">
+        <a href="#">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+	<div class="media-body">
+	  	<h4 class="media-heading">Item 2</h4>
+        This is the second item that is not nested.
+        <div class="media">
+    <div class="media-left ">
+        <a href="#">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+	<div class="media-body">
+	  	<h4 class="media-heading">Nested Item 1</h4>
+        This is the first nested item of the list.
+	</div>
+</div>
+
+        <div class="media">
+	<div class="media-body">
+	  	<h4 class="media-heading">Nested Item 2</h4>
+        This is the second nested item of the list
+	</div>
+    <div class="media-right ">
+        <a href="#">
+        	<img class="media-object" src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb64.jpg" alt="Bootstrap Thumbnail">
+        </a>
+    </div>
+</div>
+
+	</div>
+</div>
+
+	
+	</li>
+</ul>
+<script src="../../js/vendor/jquery.min.js"></script>
+<script src="../../js/bootstrap.js"></script>
+			
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-media-object","lineagePath":"../../patterns/02-organisms-02-media-00-media-object/02-organisms-02-media-00-media-object.rendered.html"}],"lineage":[{"lineagePattern":"organisms-media-object","lineagePath":"../../patterns/02-organisms-02-media-00-media-object/02-organisms-02-media-00-media-object.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>With a bit of extra markup, you can use media inside list (useful for comment threads or articles lists).</p>\n","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"media"},"patternExtension":"mustache","patternName":"Media List","patternPartial":"organisms-media-list","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1526916234530">
+  (function() {
+    if (self != top) {
+      var cb = '1526916234530';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1526916234530">
+  (function() {
+    if (self != top) {
+      var cb = '1526916234530';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	
+	</body>
+</html>

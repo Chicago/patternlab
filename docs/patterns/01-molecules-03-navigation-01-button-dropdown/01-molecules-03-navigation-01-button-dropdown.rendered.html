@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="">
+	<head>
+		<title>Pattern Lab</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="stylesheet" href="../../css/bootstrap.css" media="all" />
+		<link rel="stylesheet" href="../../css/bootstrap-theme.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		
+		<!-- End Pattern Lab -->
+	
+	</head>
+	<body class="">	
+		<div class="btn-group">
+	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Call To Action <span class="caret"></span></button>
+	<ul class="dropdown-menu">
+		<li  ><a href="#">Action</a></li>
+		<li  ><a href="#">Another action</a></li>
+		<li  ><a href="#">Something else here</a></li>
+		<li  ><a href="#">Link 4</a></li>
+	</ul>
+</div><script src="../../js/vendor/jquery.min.js"></script>
+<script src="../../js/bootstrap.js"></script>
+			
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"organisms-input-groups-dropdown","lineagePath":"../../patterns/02-organisms-01-forms-00-input-groups-dropdown/02-organisms-01-forms-00-input-groups-dropdown.rendered.html"}],"lineageR":[{"lineagePattern":"organisms-input-groups-dropdown","lineagePath":"../../patterns/02-organisms-01-forms-00-input-groups-dropdown/02-organisms-01-forms-00-input-groups-dropdown.rendered.html"}],"patternLineageEExists":true,"patternDesc":"<p>&lt;p class=&quot;lead&quot;&gt;Use any button to trigger a dropdown menu by placing it within a &lt;code&gt;.btn-group&lt;/code&gt; and providing the proper menu markup.&lt;/p&gt;</p>\n<p>&lt;div class=&quot;bs-callout bs-callout-danger&quot; id=&quot;callout-btndropdown-dependency&quot;&gt;\n&lt;h4&gt;Plugin dependency&lt;/h4&gt;\n&lt;p&gt;Button dropdowns require the &lt;a href=&quot;../javascript/#dropdowns&quot;&gt;dropdown plugin&lt;/a&gt; to be included in your version of Bootstrap.&lt;/p&gt;\n&lt;/div&gt;\n&lt;p&gt;Turn a button into a dropdown toggle with some basic markup changes.&lt;/p&gt;</p>\n","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Button Dropdown","patternPartial":"molecules-button-dropdown","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1526916234530">
+  (function() {
+    if (self != top) {
+      var cb = '1526916234530';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1526916234530">
+  (function() {
+    if (self != top) {
+      var cb = '1526916234530';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	
+	</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="">
+	<head>
+		<title>Pattern Lab</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="stylesheet" href="../../css/bootstrap.css" media="all" />
+		<link rel="stylesheet" href="../../css/bootstrap-theme.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		
+		<!-- End Pattern Lab -->
+	
+	</head>
+	<body class="">	
+		<a href="#" class="thumbnail">
+	<img src="..&#x2F;..&#x2F;images&#x2F;bootstrapthumb.jpg" alt="Bootstrap Thumbnail">
+</a>
+
+<script src="../../js/vendor/jquery.min.js"></script>
+<script src="../../js/bootstrap.js"></script>
+			
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>Extend Bootstrap's &lt;a href=&quot;../css/#grid&quot;&gt;grid system&lt;/a&gt; with the thumbnail component to easily display grids of images, videos, text, and more.\nIf you're looking for Pinterest-like presentation of thumbnails of varying heights and/or widths, you'll need to use a third-party plugin such as &lt;a href=&quot;http://masonry.desandro.com&quot;&gt;Masonry&lt;/a&gt;, &lt;a href=&quot;http://isotope.metafizzy.co&quot;&gt;Isotope&lt;/a&gt;, or &lt;a href=&quot;http://salvattore.com&quot;&gt;Salvattore&lt;/a&gt;.</p>\n<p>&lt;h2 id=&quot;thumbnails-default&quot;&gt;Default example&lt;/h2&gt;\n&lt;p&gt;By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.&lt;/p&gt;</p>\n","patternBreadcrumb":{"patternType":"atoms","patternSubtype":"media"},"patternExtension":"mustache","patternName":"Thumbnails","patternPartial":"atoms-thumbnails","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1526916234530">
+  (function() {
+    if (self != top) {
+      var cb = '1526916234530';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1526916234530">
+  (function() {
+    if (self != top) {
+      var cb = '1526916234530';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	
+	</body>
+</html>

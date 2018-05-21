@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="">
+	<head>
+		<title>Pattern Lab</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="stylesheet" href="../../css/bootstrap.css" media="all" />
+		<link rel="stylesheet" href="../../css/bootstrap-theme.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		
+		<!-- End Pattern Lab -->
+	
+	</head>
+	<body class="">	
+		<h2 id="btn-groups-toolbar">Button toolbar</h2>
+<p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> for more complex components.</p>
+<div class="btn-group" role="group" aria-label="First group">
+    <button type="button" class="btn btn-default">1</button>
+    <button type="button" class="btn btn-default">2</button>
+    <button type="button" class="btn btn-default">3</button>
+    <button type="button" class="btn btn-default">4</button>
+</div>
+<div class="btn-group" role="group" aria-label="Second group">
+    <button type="button" class="btn btn-default">5</button>
+    <button type="button" class="btn btn-default">6</button>
+    <button type="button" class="btn btn-default">7</button>
+</div>
+<div class="btn-group" role="group" aria-label="Third group">
+    <button type="button" class="btn btn-default">8</button>
+</div>
+<h2 id="btn-groups-sizing">Sizing</h2>
+<p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to each <code>.btn-group</code>, including when nesting multiple groups.</p>
+<div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+</div>
+<br>
+<div class="btn-group" role="group" aria-label="Default button group">
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+</div>
+<br>
+<div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+</div>
+<br>
+<div class="btn-group btn-group-xs" role="group" aria-label="Extra-small button group">
+	<button type="button" class="btn btn-default">Left</button>
+	<button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+</div>
+
+<h2 id="btn-groups-nested">Nesting</h2>
+<p>Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      	<button type="button" class="btn btn-default">1</button>
+	  	<button type="button" class="btn btn-default">2</button>
+	  	<div class="btn-group" role="group">
+        	<button id="btnGroupDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Dropdown
+				<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+					<li><a href="#">Dropdown link</a></li>
+					<li><a href="#">Dropdown link</a></li>
+        		</ul>
+      	</div>
+    </div>
+
+<h2 id="btn-groups-vertical">Vertical variation</h2>
+<p>Make a set of buttons appear vertically stacked rather than horizontally. <strong class="text-danger">Split button dropdowns are not supported here.</strong></p>
+<div class="btn-group btn-group-vertical" role="group" aria-label="Vertical button group">
+    <button type="button" class="btn btn-default">Button</button>
+    <button type="button" class="btn btn-default">Button</button>
+    <div class="btn-group" role="group">
+        <button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+		  <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
+        	<li><a href="#">Dropdown link</a></li>
+			<li><a href="#">Dropdown link</a></li>
+        </ul>
+    </div>
+    <button type="button" class="btn btn-default">Button</button>
+	<button type="button" class="btn btn-default">Button</button>
+	<div class="btn-group" role="group">
+        <button id="btnGroupVerticalDrop2" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+		  <span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
+		  	<li><a href="#">Dropdown link</a></li>
+		  	<li><a href="#">Dropdown link</a></li>
+        </ul>
+    </div>
+	<div class="btn-group" role="group">
+        <button id="btnGroupVerticalDrop3" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        <span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
+			<li><a href="#">Dropdown link</a></li>
+			<li><a href="#">Dropdown link</a></li>
+        </ul>
+    </div>
+    <div class="btn-group" role="group">
+    	<button id="btnGroupVerticalDrop4" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+		  	<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
+          	<li><a href="#">Dropdown link</a></li>
+		  	<li><a href="#">Dropdown link</a></li>
+        </ul>
+    </div>
+</div>
+
+<h2 id="btn-groups-justified">Justified button groups</h2>
+<p>Make a group of buttons stretch at equal sizes to span the entire width of its parent. Also works with button dropdowns within the button group.</p>
+<h4>Handling borders</h4>
+<p>Due to the specific HTML and CSS used to justify buttons (namely <code>display: table-cell</code>), the borders between them are doubled. In regular button groups, <code>margin-left: -1px</code> is used to stack the borders instead of removing them. However, <code>margin</code> doesn't work with <code>display: table-cell</code>. As a result, depending on your customizations to Bootstrap, you may wish to remove or re-color the borders.</p>
+<h4>IE8 and borders</h4>
+<p>Internet Explorer 8 doesn't render borders on buttons in a justified button group, whether it's on <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> elements. To get around that, wrap each button in another <code>.btn-group</code>.</p>
+<p>See <a href="https://github.com/twbs/bootstrap/issues/12476">#12476</a> for more information.</p>
+
+
+<h4>With <code>&lt;a&gt;</code> elements</h4>
+<p>Just wrap a series of <code>.btn</code>s in <code>.btn-group.btn-group-justified</code>.</p>
+<div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+  	<a href="#" class="btn btn-default" role="button">Left</a>
+  	<a href="#" class="btn btn-default" role="button">Middle</a>
+  	<a href="#" class="btn btn-default" role="button">Right</a>
+</div>
+<br>
+<div class="btn-group btn-group-justified" role="group" aria-label="Justified button group with nested dropdown">
+  	<a href="#" class="btn btn-default" role="button">Left</a>
+  	<a href="#" class="btn btn-default" role="button">Middle</a>
+  	<div class="btn-group" role="group">
+    	<a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+      Dropdown <span class="caret"></span>
+    	</a>
+		<ul class="dropdown-menu">
+			<li><a href="#">Action</a></li>
+			<li><a href="#">Another action</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+    	</ul>
+  	</div>
+</div>
+
+<h4>Links acting as buttons</h4>
+<p>If the <code>&lt;a&gt;</code> elements are used to act as buttons – triggering in-page functionality, rather than navigating to another document or section within the current page – they should also be given an appropriate <code>role="button"</code>.</p>
+<h4>With <code>&lt;button&gt;</code> elements</h4>
+<p>To use justified button groups with <code>&lt;button&gt;</code> elements, <strong class="text-danger">you must wrap each button in a button group</strong>. Most browsers don't properly apply our CSS for justification to <code>&lt;button&gt;</code> elements, but since we support button dropdowns, we can work around that.</p>
+<div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+	<div class="btn-group" role="group">
+    	<button type="button" class="btn btn-default">Left</button>
+  	</div>
+  	<div class="btn-group" role="group">
+    	<button type="button" class="btn btn-default">Middle</button>
+  	</div>
+  	<div class="btn-group" role="group">
+    	<button type="button" class="btn btn-default">Right</button>
+  	</div>
+</div><script src="../../js/vendor/jquery.min.js"></script>
+<script src="../../js/bootstrap.js"></script>
+			
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>&lt;p class=&quot;lead&quot;&gt;Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with &lt;a href=&quot;../javascript/#buttons&quot;&gt;our buttons plugin&lt;/a&gt;.&lt;/p&gt;</p>\n<p>&lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-btn-group-tooltips&quot;&gt;\n&lt;h4&gt;Tooltips &amp; popovers in button groups require special setting&lt;/h4&gt;\n&lt;p&gt;When using tooltips or popovers on elements within a &lt;code&gt;.btn-group&lt;/code&gt;, you'll have to specify the option &lt;code&gt;container: 'body'&lt;/code&gt; to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).&lt;/p&gt;\n&lt;/div&gt;</p>\n<p>&lt;div class=&quot;bs-callout bs-callout-warning&quot; id=&quot;callout-btn-group-accessibility&quot;&gt;\n&lt;h4&gt;Ensure correct &lt;code&gt;role&lt;/code&gt; and provide a label&lt;/h4&gt;\n&lt;p&gt;In order for assistive technologies – such as screen readers – to convey that a series of buttons is grouped, an appropriate &lt;code&gt;role&lt;/code&gt; attribute needs to be provided. For button groups, this would be &lt;code&gt;role=&quot;group&quot;&lt;/code&gt;, while toolbars should have a &lt;code&gt;role=&quot;toolbar&quot;&lt;/code&gt;.&lt;/p&gt;\n&lt;p&gt;One exception are groups which only contain a single control (for instance the &lt;a href=&quot;#btn-groups-justified&quot;&gt;justified button groups&lt;/a&gt; with &lt;code&gt;&lt;button&gt;&lt;/code&gt; elements) or a dropdown.&lt;/p&gt;\n&lt;p&gt;In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct &lt;code&gt;role&lt;/code&gt; attribute. In the examples provided here, we use &lt;code&gt;aria-label&lt;/code&gt;, but alternatives such as &lt;code&gt;aria-labelledby&lt;/code&gt; can also be used.&lt;/p&gt;\n&lt;/div&gt;</p>\n","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"components"},"patternExtension":"mustache","patternName":"Button Groups","patternPartial":"molecules-button-groups-variants","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1526916234530">
+  (function() {
+    if (self != top) {
+      var cb = '1526916234530';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1526916234530">
+  (function() {
+    if (self != top) {
+      var cb = '1526916234530';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	
+	</body>
+</html>

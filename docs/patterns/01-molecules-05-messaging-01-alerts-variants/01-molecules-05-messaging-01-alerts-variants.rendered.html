@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="">
+	<head>
+		<title>Pattern Lab</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="stylesheet" href="../../css/bootstrap.css" media="all" />
+		<link rel="stylesheet" href="../../css/bootstrap-theme.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		
+		<!-- End Pattern Lab -->
+	
+	</head>
+	<body class="">	
+		<div class="alert alert-success" role="alert">
+	<strong>Well done!</strong> You successfully read this important alert message.
+</div>
+<div class="alert alert-info" role="alert">
+	<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+<div class="alert alert-warning" role="alert">
+	<strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+<div class="alert alert-danger" role="alert">
+	<strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+
+<h2 id="alerts-dismissible">Dismissible alerts</h2>
+<p>Build on any alert by adding an optional <code>.alert-dismissible</code> and close button.</p>
+
+<h4>Requires JavaScript alert plugin</h4>
+<p>For fully functioning, dismissible alerts, you must use the <a href="../javascript/#alerts">alerts JavaScript plugin</a>.</p>
+<div class="alert alert-warning alert-dismissible" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+
+<h4>Ensure proper behavior across all devices</h4>
+<p>Be sure to use the <code>&lt;button&gt;</code> element with the <code>data-dismiss="alert"</code> data attribute.</p>
+
+<h2 id="alerts-links">Links in alerts</h2>
+<p>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
+
+<div class="alert alert-success" role="alert">
+	<strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+</div>
+<div class="alert alert-info" role="alert">
+  	<strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+</div>
+<div class="alert alert-warning" role="alert">
+  	<strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
+</div>
+<div class="alert alert-danger" role="alert">
+  	<strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+</div><script src="../../js/vendor/jquery.min.js"></script>
+<script src="../../js/bootstrap.js"></script>
+			
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<hr>\n<h2>title: Alerts</h2>\n","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"messaging"},"patternExtension":"mustache","patternName":"Alerts Variants","patternPartial":"molecules-alerts-variants","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1526916234530">
+  (function() {
+    if (self != top) {
+      var cb = '1526916234530';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1526916234530">
+  (function() {
+    if (self != top) {
+      var cb = '1526916234530';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	
+	</body>
+</html>
