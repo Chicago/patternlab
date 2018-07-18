@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html class="pl">
+  <head>
+    <title>Pattern Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Sorts+Mill+Goudy" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css?1531923410107" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1531923410107" media="all" />
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="body">
+    
+<section class="section latest-posts">
+	<h2 class="section-title">Latest Posts</h2>
+	<ul class="post-list">
+		<li><div class="block block-thumb">
+    <a href="#" class="b-inner">
+		<div class="b-thumb">
+			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+		</div>
+		<div class="b-text">
+			<h2 class="b-title">Lorem ipsum dolor sit (37 characters)</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</a>
+</div></li>
+		<li><div class="block block-thumb">
+    <a href="#" class="b-inner">
+		<div class="b-thumb">
+			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+		</div>
+		<div class="b-text">
+			<h2 class="b-title">Lorem ipsum dolor sit (37 characters)</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</a>
+</div></li>
+		<li><div class="block block-thumb">
+    <a href="#" class="b-inner">
+		<div class="b-thumb">
+			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+		</div>
+		<div class="b-text">
+			<h2 class="b-title">Lorem ipsum dolor sit (37 characters)</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</a>
+</div></li>
+		<li><div class="block block-thumb">
+    <a href="#" class="b-inner">
+		<div class="b-thumb">
+			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+		</div>
+		<div class="b-text">
+			<h2 class="b-title">Lorem ipsum dolor sit (37 characters)</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</a>
+</div></li>
+		<li><div class="block block-thumb">
+    <a href="#" class="b-inner">
+		<div class="b-thumb">
+			<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+		</div>
+		<div class="b-text">
+			<h2 class="b-title">Lorem ipsum dolor sit (37 characters)</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</a>
+</div></li>
+	</ul>
+	<a href="#" class="text-btn">View more posts</a>
+</section>  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-media-block","lineagePath":"../../patterns/01-molecules-02-blocks-00-media-block/01-molecules-02-blocks-00-media-block.rendered.html"}],"lineage":[{"lineagePattern":"molecules-media-block","lineagePath":"../../patterns/01-molecules-02-blocks-00-media-block/01-molecules-02-blocks-00-media-block.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-blog","lineagePath":"../../patterns/03-templates-01-blog/03-templates-01-blog.rendered.html"}],"lineageR":[{"lineagePattern":"templates-blog","lineagePath":"../../patterns/03-templates-01-blog/03-templates-01-blog.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"sections"},"patternExtension":"mustache","patternName":"Latest Posts","patternPartial":"organisms-latest-posts","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1531923410107">
+  (function() {
+    if (self != top) {
+      var cb = '1531923410107';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1531923410107">
+  (function() {
+    if (self != top) {
+      var cb = '1531923410107';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+  <script type="text/javascript" src="/js/nav.js"></script>
+  <script type="text/javascript" src="/js/progress.js"></script>
+  <script type="text/javascript" src="/js/overlay.js"></script>
+  </body>
+</html>

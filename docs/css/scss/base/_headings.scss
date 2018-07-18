@@ -1,53 +1,30 @@
-/*------------------------------------*\
-    #HEADINGS
-\*------------------------------------*/
-
-/**
- * Heading 1
- */
-h1  {
-	font-size: 3rem;
+/* Headings */
+/*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
+h1, .alpha   { 
 	line-height: 1.2;
 }
 
-/**
- * Heading 2
- */
-h2 {
+h2, .beta    { 
 	line-height: 1.2;
 }
 
-/**
- * Heading 3
- */
-h3  {
+h3, .gamma   { 
 	line-height: 1.2;
 }
 
-/**
- * Heading 4
- */
-h4  {
-
+h4, .delta   {
+	
 }
 
-/**
- * Heading 5
- */
-h5 {
-
+h5, .epsilon { 
+	
 }
 
-/**
- * Heading 6
- */
-h6 {
-
+h6, .zeta    { 
+	
 }
 
-/**
- * Subheading
- */
+/* Subheadings */
 .subheading {
 	font-family: $font-secondary;
 	font-weight: normal;

@@ -1,39 +1,26 @@
-/*------------------------------------*\
-    #TEXT
-\*------------------------------------*/
-
-/**
- * Paragraph base styles
- */
+/* Text-Related Elements */ 
 p {
 	margin-bottom: $space;
 }
 
-/**
- * Blockquote base styles
- */
+/* Blockquote */
 blockquote {
     font-style:italic;
-    border-left: 1px solid $color-gray-50;
-    color: $color-gray-50;
+    border-left: 1px solid $gray;
+    color: $gray;
 	padding-left: $pad;
 	margin-bottom: $space;
 }
 
-/**
- * Horizontal rule base styles
- */
+/* Horizontal Rule */ 
 hr {
 	border: 0;
     height: 2px;
-    background: $color-gray-15;
+    background: $gray-light-2;
     margin: $space-double 0;
 }
 
-/**
- * Abbreviation base styles
- */
 abbr {
-    border-bottom: 1px dotted $color-gray-50;
+    border-bottom: 1px dotted $gray;
     cursor: help;
 }
